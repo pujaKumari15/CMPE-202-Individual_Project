@@ -13,6 +13,8 @@ public class RequestLogProcessor implements LogProcessor {
 
     public String processLog(List<String> logs) {
 
+        System.out.println("Starting Request Log Processor");
+
         Map<String, Map<String, Map<String, Long>>> requestLogOutputMap = new LinkedHashMap<>();
         Map<String, List<Long>> responseTimeMap = new LinkedHashMap<>();
         Map<String, Map<String, Long>> responseTimeMap1 = new LinkedHashMap<>();
